@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #50514F;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.squares-container {
+    display: grid;
+    width: 400px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 0px;
+}
+
+.square {
+    font-family: "Audiowide", sans-serif;
+    font-size: 16px;
+    background-color: #A2ABAB;
+    border-radius: 5%;
+    color: #FFF;
+    height: 40px;
+    width: 40px;
+    border: solid 1px #000;
+
+}
+
+.square:not(.drop, .answer):hover {
+    background-color: #BDC9C9;
+}
+
+.info {
+    color: white;
+    font-size: 33px;
+    font-family: 'Lato';
+    margin: 10px;
+}
