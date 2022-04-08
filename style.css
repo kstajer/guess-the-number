@@ -25,7 +25,7 @@ body {
     font-family: "Audiowide", sans-serif;
     font-size: 16px;
     background-color: #A2ABAB;
-    border-radius: 5%;
+    border-radius: 10%;
     color: #FFF;
     height: 40px;
     width: 40px;
@@ -39,7 +39,29 @@ body {
 
 .info {
     color: white;
-    font-size: 33px;
-    font-family: 'Lato';
+    font-size: 22px;
+    font-family: "Audiowide", sans-serif;
+    text-transform: uppercase;
     margin: 10px;
+}
+
+.answer {
+    z-index: 1;
+}
+
+.restart {
+    font-family: "Audiowide", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #A2ABAB;
+    border-radius: 10%;
+    color: #FFF;
+    height: 40px;
+    width: 160px;
+    border: solid 1px #000;
+
+}
+
+.restart:hover {
+    background-color: #BDC9C9;
 }

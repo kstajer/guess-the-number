@@ -1,6 +1,6 @@
 const container = document.querySelector(".squares-container")
-const number = Math.floor(Math.random() * 101);
-var typeIterator = 0;
+var number = Math.floor(Math.random() * 101);
+
 
 function generateSquares(){
     for (i = 1; i <= 100; i++) {
@@ -25,6 +25,25 @@ function dropSquares(start, end, number) {
         rotate: '1turn'
     });
 }
+
+
+function restartGame() {
+    number = Math.floor(Math.random() * 101);
+
+    document.querySelectorAll(".drop").forEach(d => {
+        d.classList.remove("drop");
+    }); 
+    const a = document.querySelector(".answer");
+    a.classList.remove("answer");
+
+    anime({
+        targets: '.square',
+        backgroundColor: "#A2ABAB",
+        rotate: '2turn',
+        duration: 1000
+    });
+}
+
 
 generateSquares();
 
@@ -55,3 +74,5 @@ squares.forEach(square => {
     }
     })
 })
+
+document.querySelector(".restart").addEventListener('click', restartGame);
