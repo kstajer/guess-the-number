@@ -1,4 +1,3 @@
 # guess-the-number
 
-
-![gif](gtn-demo.gif)
+<img src="gtn-demo.gif" width="128"/>
