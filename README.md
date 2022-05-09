@@ -1,7 +1,8 @@
 # Guess the number
 
-## Description
-It is a popular minigame in which you have to guess the number from 1 to 100. I did this miniproject to get to know and practice anime.js framework.
+## Opis
+
+Popularna mini gra, w której użytkownik musi trafić liczbę z zakresu 1-100. Dzięki temu projektowi poznałem anime.js.
 
 ## Demo
 <p align="center">
